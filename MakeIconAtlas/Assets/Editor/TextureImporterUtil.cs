@@ -39,47 +39,6 @@ public class TextureImporterUtil {
         importer.SetPlatformTextureSettings(TextureImporterUtil.CreateImporterSetting(GetTextureBuildTargetName(), 2048, TextureImporterFormat.RGBA32));
     }
 
-    public static void CreateUnreadableTextureImporter(string path) {
-        TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
-        if (importer == null) {
-            Debug.LogError("发现不是图片的资源, 资源路径 = " + path); return;
-        }
-        importer.isReadable = false;
-        importer.SetPlatformTextureSettings(TextureImporterUtil.CreateImporterSetting(GetTextureBuildTargetName(), 2048, TextureImporterFormat.Automatic));
-    }
-
-    public static void CreateColorChannelImporter(string path) {
-        TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
-        if (importer == null) {
-            Debug.LogError("发现不是图片的资源, 资源路径 = " + path); return;
-        }
-        importer.SetPlatformTextureSettings(TextureImporterUtil.CreateImporterSetting(GetTextureBuildTargetName(), 2048, GetTextureFormat()));
-    }
-
-    public static void CreateAlphaChannelImporter(string path) {
-        TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
-        if (importer == null) { Debug.LogError("发现不是图片的资源, 资源路径 = " + path); return; }
-        importer.textureType = TextureImporterType.Sprite;
-        importer.isReadable = false;
-        importer.mipmapEnabled = false;
-        importer.SetPlatformTextureSettings(TextureImporterUtil.CreateImporterSetting(GetTextureBuildTargetName(), 2048, GetTextureFormat(), 100, false));
-    }
-
-    // 根据目标平台选择不同压缩格式
-    public static TextureImporterFormat GetTextureFormat() {
-        switch (AssetPathHelper.GetBuildTarget()) {
-            case BuildTarget.StandaloneWindows:
-            case BuildTarget.StandaloneWindows64:
-            case BuildTarget.StandaloneOSX:
-                return TextureImporterFormat.DXT5;
-            case BuildTarget.Android:
-                return TextureImporterFormat.ETC2_RGBA8;
-            case BuildTarget.iOS:
-                return TextureImporterFormat.ASTC_4x4;
-        }
-        return TextureImporterFormat.DXT5;
-    }
-
     // 返回贴图打包的平台名字
     public static string GetTextureBuildTargetName() {
         switch (AssetPathHelper.GetBuildTarget()) {

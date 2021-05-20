@@ -8,7 +8,6 @@ using UnityEngine;
 
 namespace EditorTools.UI {
     public class AtlasWriter {
-        public const int ATLAS_MAX_SIZE = 2048;
         public const int FAVOR_ATLAS_SIZE = 2048;
 
         public static void Write(Texture2D atlas, string path) { //将Texture2D数据写入路径的图片资源

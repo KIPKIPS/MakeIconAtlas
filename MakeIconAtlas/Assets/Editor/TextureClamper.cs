@@ -54,17 +54,5 @@ namespace EditorTools.UI {
             targetTexture.Apply();//实际应用任何先前的 SetPixel 和 SetPixels 更改,将贴图数据进行应用
             return targetTexture; //返回targetTexture贴图数据
         }
-        //生成单图图集
-        public static Texture2D ClampSingle(Texture2D sourceTexture) {
-            int sourceWidth = sourceTexture.width;
-            int sourceHeight = sourceTexture.height;
-            Color32[] sourcePixels = sourceTexture.GetPixels32();
-            int targetWidth = sourceWidth;
-            int targetHeight = sourceHeight;
-            Texture2D targetTexture = new Texture2D(targetWidth, targetHeight);
-            targetTexture.SetPixels32(sourcePixels);
-            targetTexture.Apply();
-            return targetTexture;
-        }
     }
 }

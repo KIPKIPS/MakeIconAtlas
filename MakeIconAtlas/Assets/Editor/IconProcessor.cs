@@ -162,11 +162,11 @@ namespace EditorTools.UI {
         }
 
         //按照打包路径获取打包Tag,这个规则需要约定好
-        private static string GetPackingTagFromPath(string path) {
-            int lastSlashIndex = path.LastIndexOf(@"/");//获取最后一个斜杠的索引
-            int lastDotIndex = path.LastIndexOf(@".");//获取最后一个点的索引
-            return path.Substring(lastSlashIndex + 1, (lastDotIndex - lastSlashIndex - 1));//最后一个斜杠的后一位开始,到最后一个点的位置
-        }
+        // private static string GetPackingTagFromPath(string path) {
+        //     int lastSlashIndex = path.LastIndexOf(@"/");//获取最后一个斜杠的索引
+        //     int lastDotIndex = path.LastIndexOf(@".");//获取最后一个点的索引
+        //     return path.Substring(lastSlashIndex + 1, (lastDotIndex - lastSlashIndex - 1));//最后一个斜杠的后一位开始,到最后一个点的位置
+        // }
         //导入贴图
         private static void ImportReadableTexture(string path) {
             TextureImporterUtil.CreateReadableTextureImporter(path);//创建导入器
