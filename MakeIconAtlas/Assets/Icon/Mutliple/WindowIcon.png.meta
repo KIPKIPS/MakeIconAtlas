@@ -17,6 +17,18 @@ TextureImporter:
   - first:
       213: 3758558787672744839
     second: 2013
+  - first:
+      213: 1840059084634729652
+    second: 12
+  - first:
+      213: -5955289595999590514
+    second: 201
+  - first:
+      213: -5202534442311399235
+    second: 321
+  - first:
+      213: 5188371862809579957
+    second: 452
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -104,6 +116,27 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: 12
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc22690df3398910800000000000000
+      internalID: 1840059084634729652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: 2006
       rect:
         serializedVersion: 2
@@ -149,8 +182,8 @@ TextureImporter:
       name: 2008
       rect:
         serializedVersion: 2
-        x: 162
-        y: 2
+        x: 2
+        y: 86
         width: 64
         height: 64
       alignment: 0
@@ -167,10 +200,31 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2012
+      name: 201
       rect:
         serializedVersion: 2
         x: 2
+        y: 154
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e876dd73aaf8a5da0800000000000000
+      internalID: -5955289595999590514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2012
+      rect:
+        serializedVersion: 2
+        x: 70
         y: 86
         width: 64
         height: 64
@@ -191,7 +245,7 @@ TextureImporter:
       name: 2013
       rect:
         serializedVersion: 2
-        x: 2
+        x: 70
         y: 154
         width: 64
         height: 64
@@ -204,6 +258,48 @@ TextureImporter:
       bones: []
       spriteID: 78328aebd45192430800000000000000
       internalID: 3758558787672744839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 321
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 86
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db84b4a2d72ecc7b0800000000000000
+      internalID: -5202534442311399235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 452
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 154
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b1956558bcc00840800000000000000
+      internalID: 5188371862809579957
       vertices: []
       indices: 
       edges: []
