@@ -3,6 +3,9 @@ guid: bd3166d88de6aa4438d6384e9f3ddc91
 TextureImporter:
   internalIDToNameTable:
   - first:
+      213: 1840059084634729652
+    second: 12
+  - first:
       213: 6090503619559557021
     second: 2006
   - first:
@@ -12,17 +15,14 @@ TextureImporter:
       213: -1502851455294318496
     second: 2008
   - first:
+      213: -5955289595999590514
+    second: 201
+  - first:
       213: 8182334498922087363
     second: 2012
   - first:
       213: 3758558787672744839
     second: 2013
-  - first:
-      213: 1840059084634729652
-    second: 12
-  - first:
-      213: -5955289595999590514
-    second: 201
   - first:
       213: -5202534442311399235
     second: 321

@@ -94,4 +94,5 @@ public class TextureImporterUtil {
         importer.spritePackingTag = "";
         importer.SetPlatformTextureSettings(TextureImporterUtil.CreateImporterSetting(GetTextureBuildTargetName(), 2048, format, 100, false));
     }
+    
 }
